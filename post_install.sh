@@ -10,8 +10,8 @@ sudo apt-get --force-yes install libgl1-mesa-dev-lts-utopic
 sudo apt-get --force-yes install vim vim-runtime
 sudo apt-get --force-yes install tmux 
 sudo apt-get --force-yes install git 
-sudo apt-get --force-yes install ros-indigo-desktop-full
-sudo apt-get --force-yes install ros-indigo-ackermann-msgs ros-indigo-serial
+sudo apt-get --force-yes install ros-kinetic-desktop-full
+sudo apt-get --force-yes install ros-kinetic-ackermann-msgs ros-kinetic-serial
 
 sudo apt-get --force-yes update
 
@@ -30,11 +30,11 @@ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 
 sudo apt-get --force-yes update
 
-sudo apt-get --force-yes install ros-indigo-controller-manager ros-indigo-gazebo-ros-control ros-indigo-gazebo-ros-pkgs ros-indigo-joint-state-controller ros-indigo-effort-controllers 
+sudo apt-get --force-yes install ros-kinetic-controller-manager ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-joint-state-controller ros-kinetic-effort-controllers 
 
 
 ### SET UP WORKSPACE
-echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 . ~/.bashrc
 
 cd ~/racecar-ws/src/
