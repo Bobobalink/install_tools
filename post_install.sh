@@ -19,7 +19,7 @@ mkdir -p ~/racecar-ws/src
 cd ~/racecar-ws/src
 git clone https://github.com/mit-racecar/racecar-simulator.git
 git clone https://github.com/mit-racecar/racecar.git
-git clone https://github.com/mit-racecar/vesc.git
+git clone https://github.com/Bobobalink/vesc.git  # use the vesc package with changes for newer versions of boost
 
 
 ### INSTALL GAZEBO
