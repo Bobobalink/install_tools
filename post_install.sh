@@ -22,17 +22,6 @@ git clone https://github.com/mit-racecar/racecar.git
 git clone https://github.com/Bobobalink/vesc.git  # use the vesc package with changes for newer versions of boost
 
 
-### INSTALL GAZEBO
-
-sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
-
-wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
-
-sudo apt-get --force-yes update
-
-sudo apt-get --force-yes install ros-kinetic-controller-manager ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-joint-state-controller ros-kinetic-effort-controllers 
-
-
 ### SET UP WORKSPACE
 echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 . ~/.bashrc
