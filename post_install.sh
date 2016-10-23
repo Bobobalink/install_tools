@@ -10,7 +10,7 @@ sudo apt-get --force-yes install libgl1-mesa-dev-lts-utopic
 sudo apt-get --force-yes install vim vim-runtime
 sudo apt-get --force-yes install tmux 
 sudo apt-get --force-yes install git 
-sudo apt-get --force-yes install ros-kinetic-desktop-full
+sudo apt-get --force-yes install ros-kinetic-desktop
 sudo apt-get --force-yes install ros-kinetic-ackermann-msgs ros-kinetic-serial
 
 sudo apt-get --force-yes update
