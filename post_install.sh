@@ -49,9 +49,19 @@ echo "export ROS_IP=`hostname -I`" >> ~/.bashrc
 ### INSTALL ZED SDK
 
 # Jetson TX1
-wget -O ZED_SDK.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_JTX1_v1.2.0_64b_JetPack23.run
+wget -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_JTX1_v1.2.0_64b_JetPack23.run
 
 # Ubuntu
-#wget -O ZED_SDK.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_Ubuntu16_CUDA80_v1.2.0.run
+#wget -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_Ubuntu16_CUDA80_v1.2.0.run
 
-sh ZED_SDK.run
+sh ZED_SDK_v1.2.0.run
+
+
+### INSTALL PCL
+sudo apt-get --force-yes install libflann-dev
+wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.0.tar.gz
+tar xf pcl-pcl-1.8.0.tar.gz
+cd pcl-pcl-1.8.0 && mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make -j4
+sudo make -j4 install
