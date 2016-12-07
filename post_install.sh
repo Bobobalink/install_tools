@@ -34,5 +34,12 @@ echo "source ~/racecar-ws/devel/setup.sh" >> ~/.bashrc
 echo "export ROS_IP=`hostname -I`" >> ~/.bashrc
 
 
+### INSTALL ZED SDK
 
-# 
+# Jetson TX1
+wget -O ZED_SDK.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_JTX1_v1.2.0_64b_JetPack23.run
+
+# Ubuntu
+#wget -O ZED_SDK.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_Ubuntu16_CUDA80_v1.2.0.run
+
+sh ZED_SDK.run
