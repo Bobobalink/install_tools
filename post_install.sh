@@ -58,10 +58,4 @@ sh ZED_SDK_v1.2.0.run
 
 
 ### INSTALL PCL
-sudo apt-get --force-yes install libflann-dev
-wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.0.tar.gz
-tar xf pcl-pcl-1.8.0.tar.gz
-cd pcl-pcl-1.8.0 && mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
-make -j4
-sudo make -j4 install
+sudo apt-get --force-yes install ros-kinetic-pcl-*
