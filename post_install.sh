@@ -59,3 +59,7 @@ sh ZED_SDK_v1.2.0.run
 
 ### INSTALL PCL
 sudo apt-get --force-yes install ros-kinetic-pcl-*
+
+
+### INSTALL URG NODE FOR HOKUYO
+sudo apt-get --force-yes install ros-kinetic-urg-node
