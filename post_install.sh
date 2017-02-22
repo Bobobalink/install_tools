@@ -30,7 +30,7 @@ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 
 sudo apt-get --force-yes update
 
-sudo apt-get --force-yes install ros-kinetic-controller-manager ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-joint-state-controller ros-kinetic-effort-controllers 
+sudo apt-get --force-yes install ros-kinetic-controller-manager ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-joint-state-controller ros-kinetic-effort-controllers
 
 
 ### SET UP WORKSPACE
@@ -63,3 +63,6 @@ sudo apt-get --force-yes install ros-kinetic-pcl-*
 
 ### INSTALL URG NODE FOR HOKUYO
 sudo apt-get --force-yes install ros-kinetic-urg-node
+
+### MAPPING
+sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping
