@@ -64,5 +64,5 @@ sh ZED_SDK_v1.2.0.run
 ### INSTALL URG NODE FOR HOKUYO
 sudo apt-get --force-yes install ros-kinetic-urg-node
 
-### MAPPING
-sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping
+### MAPPING AND LOCALIZATION
+sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl
