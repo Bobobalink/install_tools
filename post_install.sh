@@ -52,7 +52,7 @@ sudo apt-get --force-yes install ros-kinetic-pcl-*
 
 # Jetson TX1
 sudo apt-get --force-yes install libopencv4tegra-python
-wget -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_JTX1_v1.2.0_64b_JetPack23.run
+wget -U "Mozilla" -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_JTX1_v1.2.0_64b_JetPack23.run
 
 # Ubuntu
 #wget -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_Ubuntu16_CUDA80_v1.2.0.run
