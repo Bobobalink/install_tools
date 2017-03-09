@@ -25,7 +25,6 @@ wstool update
 sudo rosdep init
 rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro $ROS_DISTRO -y -r
-catkin_make
 
 
 ### INSTALL GAZEBO
@@ -66,3 +65,11 @@ sudo apt-get --force-yes install ros-kinetic-urg-node
 
 ### MAPPING AND LOCALIZATION
 sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl
+
+
+### SET UP SOLACE PACKAGE
+cd ~/racecar-ws/src/racecar
+git clone https://github.com/TJ-Solace/solace.git
+cd ~/racecar-ws
+catkin_make
+source ~/racecar-ws/devel/setup.bash
