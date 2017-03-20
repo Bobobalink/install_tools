@@ -64,7 +64,7 @@ sh ZED_SDK_v1.2.0.run
 sudo apt-get --force-yes install ros-kinetic-urg-node
 
 ### MAPPING AND LOCALIZATION
-sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl
+sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-move-base
 
 
 ### SET UP SOLACE PACKAGE
