@@ -39,18 +39,16 @@ sudo apt-get --force-yes update
 sudo apt-get --force-yes install ros-kinetic-controller-manager ros-kinetic-gazebo-ros-control ros-kinetic-gazebo-ros-pkgs ros-kinetic-joint-state-controller ros-kinetic-effort-controllers
 
 
-echo "Setting up .bashrc"
-
+### SET UP .bashrc
 cd ~/
 curl -L https://github.com/TJ-Solace/install_tools/raw/master/bashrc_ending_vm.snippet >> ~/.bashrc
 source ~/.bashrc
 
 
 ### SET UP ZED SDK
-
 sudo apt-get --force-yes install ros-kinetic-pcl-*
 
-# Jetson TX1
+# Jetson
 sudo apt-get --force-yes install libopencv4tegra-python
 wget -U "Mozilla" -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327af3/ZED_SDK_Linux_JTX1_v1.2.0_64b_JetPack23.run
 
@@ -62,6 +60,7 @@ sh ZED_SDK_v1.2.0.run
 
 ### INSTALL URG NODE FOR HOKUYO
 sudo apt-get --force-yes install ros-kinetic-urg-node
+
 
 ### MAPPING AND LOCALIZATION
 sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-move-base
