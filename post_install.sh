@@ -42,7 +42,7 @@ sudo apt-get --force-yes install ros-kinetic-controller-manager ros-kinetic-gaze
 echo "Setting up .bashrc"
 
 cd ~/
-curl -L https://raw.githubusercontent.com/mit-racecar/install_tools/master/bashrc_ending_vm.snippet >> ~/.bashrc
+curl -L https://github.com/TJ-Solace/install_tools/raw/master/bashrc_ending_vm.snippet >> ~/.bashrc
 source ~/.bashrc
 
 
