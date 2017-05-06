@@ -66,6 +66,10 @@ sudo apt-get --force-yes install ros-kinetic-urg-node
 sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-move-base
 
 
+### IMAGE PROCESSING
+sudo apt-get --force-yes install imagemagick
+
+
 ### SET UP SOLACE PACKAGE
 cd ~/racecar-ws/src/racecar
 git clone https://github.com/TJ-Solace/solace.git
