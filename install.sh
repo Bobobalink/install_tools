@@ -69,7 +69,10 @@ git clone https://github.com/TJ-Solace/map_server.git
 
 
 ### IMAGE PROCESSING
-sudo apt-get --force-yes install imagemagick
+sudo apt-get --force-yes install imagemagick build-essential sed cmake libjpeg-dev libeigen3-dev
+cd ~/racecar-ws/src/racecar/solace/OpenPano
+make -C src
+cp ~/racecar-ws/src/racecar/solace/OpenPano/config.cfg ~/.ros
 
 
 ### SET UP SOLACE PACKAGE
