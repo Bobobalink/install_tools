@@ -58,6 +58,11 @@ wget -U "Mozilla" -O ZED_SDK_v1.2.0.run https://www.stereolabs.com/download_327a
 sh ZED_SDK_v1.2.0.run
 
 
+### INSTALL VESC DRIVER
+cd ~/racecar-ws/src
+git clone https://github.com/TJ-Solace/vesc.git
+
+
 ### INSTALL URG NODE FOR HOKUYO
 sudo apt-get --force-yes install ros-kinetic-urg-node
 
