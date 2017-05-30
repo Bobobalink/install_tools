@@ -63,7 +63,9 @@ sudo apt-get --force-yes install ros-kinetic-urg-node
 
 
 ### MAPPING AND LOCALIZATION
-sudo apt-get --force-yes install ros-kinetic-map-server ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-move-base
+sudo apt-get --force-yes install ros-kinetic-gmapping ros-kinetic-amcl ros-kinetic-move-base
+cd ~/racecar-ws/src/racecar
+git clone https://github.com/TJ-Solace/map_server.git
 
 
 ### IMAGE PROCESSING
